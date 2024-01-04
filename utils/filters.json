@@ -1,0 +1,143 @@
+{
+  "genres": [
+    {
+      "genre": "rock"
+    },
+    {
+      "genre": "hip hop"
+    },
+    {
+      "genre": "country"
+    },
+    {
+      "genre": "heavy metal"
+    },
+    {
+      "genre": "electronic"
+    },
+    {
+      "genre": "reggae"
+    },
+    {
+      "genre": "new-age"
+    },
+    {
+      "genre": "world"
+    },
+    {
+      "genre": "indie"
+    },
+    {
+      "genre": "industrial"
+    },
+    {
+      "genre": "house"
+    },
+    {
+      "genre": "gospel"
+    },
+    {
+      "genre": "ska"
+    },
+    {
+      "genre": "jungle"
+    },
+    {
+      "genre": "electroacoustic"
+    },
+    {
+      "genre": "harcore"
+    },
+    {
+      "genre": "hauntology"
+    },
+    {
+      "genre": "plunderphonics"
+    },
+    {
+      "genre": "electronica"
+    },
+    {
+      "genre": "avant-garde"
+    },
+    {
+      "genre": "progressive rock"
+    },
+    {
+      "genre": "latin"
+    },
+    {
+      "genre": "folk"
+    },
+    {
+      "genre": "funk"
+    },
+    {
+      "genre": "classical"
+    },
+    {
+      "genre": "jazz"
+    },
+    {
+      "genre": "pop"
+    },
+    {
+      "genre": "blues"
+    },
+    {
+      "genre": "punk rock"
+    },
+    {
+      "genre": "alternative"
+    },
+    {
+      "genre": "r&b"
+    }
+  ],
+  "formats": [
+    {
+      "format": "lyric sheet"
+    },
+    {
+      "format": "mp3"
+    },
+    {
+      "format": "mp4"
+    }
+  ],
+  "languages": [
+    {
+      "language": "english"
+    },
+    {
+      "language": "spanish"
+    },
+    {
+      "language": "portuguese"
+    },
+    {
+      "language": "french"
+    },
+    {
+      "language": "italian"
+    },
+    {
+      "language": "hindi"
+    },
+    {
+      "language": "mandarin"
+    },
+    {
+      "language": "german"
+    },
+    {
+      "language": "russian"
+    },
+    {
+      "language": "japanese"
+    },
+    {
+      "language": "korean"
+    }
+  ]
+}

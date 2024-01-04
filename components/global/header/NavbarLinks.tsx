@@ -44,7 +44,7 @@ const NavbarLinks = () => {
         <FaUserAlt className="btn-icon group-hover/link:text-btn-effect-color hover-ease" />
       </Link>
 
-      <Burger />
+      {/* <Burger /> */}
     </>
   );
 };

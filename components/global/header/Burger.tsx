@@ -12,9 +12,9 @@ const Burger = () => {
     <>
       <button
         onClick={() => setShowDropdownMenu(!showDropdownMenu)}
-        className="group/link scale-100 md:scale-0"
+        className="absolute top-14 right-10 z-40 group/link scale-100 md:scale-0"
       >
-        <HiMenuAlt1 className="btn-icon group-hover/link:btn-content-hover-effect hover-ease" />
+        <HiMenuAlt1 className="btn-icon group-hover/link:btn-content-hover-effect" />
       </button>
 
       <AnimatePresence initial={false} mode="wait">

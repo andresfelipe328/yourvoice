@@ -7,14 +7,30 @@
     @apply m-0 p-0 box-border;
   }
 
+  html {
+    @apply bg-bg;
+  }
+
   body {
-    @apply bg-bg h-screen;
+    @apply relative w-full;
   }
 
   h1,
   h2,
   h3 {
     @apply uppercase font-bold text-text-color/85;
+  }
+
+  h1 {
+    @apply text-xl;
+  }
+
+  h2 {
+    @apply text-lg;
+  }
+
+  h3 {
+    @apply text-base;
   }
 
   small {
@@ -28,9 +44,23 @@
   button {
     @apply flex items-center gap-2 p-2 bg-btn-color rounded-md shadow-s hover:shadow-l hover:bg-btn-effect-color hover-ease;
   }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-btn-effect-color/50;
+  }
+  ::-webkit-scrollbar {
+    @apply w-[.4rem];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-text-color/50;
+  }
 }
 
 @layer components {
+  .navbar {
+    @apply sticky top-0 shadow-xs backdrop-blur-[15px] z-40;
+  }
+
   .hover-ease {
     @apply transition-all duration-300 ease-in-out;
   }
@@ -40,7 +70,7 @@
   }
 
   .btn-content-hover-effect {
-    @apply group-hover:text-btn-color hover-ease;
+    @apply text-btn-color hover-ease;
   }
 
   .backdrop {
