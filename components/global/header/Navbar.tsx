@@ -10,7 +10,7 @@ const Navbar = () => {
       <header className="group flex items-center justify-between p-10">
         <div className="flex items-center gap-5">
           <Image
-            src="/yourVoice_logo.svg"
+            src="/yourvoice_logo.svg"
             width={70}
             height={70}
             className="drop-shadow-md"
