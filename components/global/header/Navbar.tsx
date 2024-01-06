@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <NavbarAnimLayout>
-        <header className="group flex items-center justify-between p-10">
+        <header className="group flex items-center justify-between px-10 py-5 backdrop-blur-[15px] shadow-xs">
           <div className="flex items-center gap-2">
             <Image
               src="/yourvoice_logo.svg"

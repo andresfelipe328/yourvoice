@@ -41,8 +41,16 @@
     @apply text-text-color;
   }
 
+  input {
+    @apply border-none outline-none text-text-color bg-transparent placeholder:text-text-color/85 placeholder:opacity-85 font-semibold;
+  }
+
   button {
     @apply flex items-center gap-2 p-2 bg-btn-color rounded-md shadow-s hover:shadow-l hover:bg-btn-effect-color hover-ease;
+  }
+
+  select {
+    @apply border-none outline-none bg-btn-color p-2 rounded-md shadow-s hover:shadow-m focus:shadow-m  text-text-color hover-ease text-sm font-semibold;
   }
 
   ::-webkit-scrollbar-track {
@@ -58,7 +66,7 @@
 
 @layer components {
   .navbar {
-    @apply sticky top-0 shadow-xs backdrop-blur-[15px] z-40;
+    @apply sticky top-0 z-40;
   }
 
   .hover-ease {

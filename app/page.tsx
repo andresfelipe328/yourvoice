@@ -1,42 +1,23 @@
+import React from "react";
 import LandingAnim from "@/components/layout/layoutAnimations/pageAnims/LandingAnim";
-import filter from "@/utils/filters.json";
+import Filtering from "@/components/pages/homePage/Filtering";
+import SearchBar from "@/components/pages/homePage/SearchBar";
 
 export default function Home() {
   return (
     <LandingAnim>
-      <div className="max-w-7xl mx-auto w-full flex-1 flex p-4">
-        <div className="bg-red-200 p-4">
-          <h2>Filter Menu</h2>
-          <ul className="ml-2">
-            <h3>Genres</h3>
-            {filter.genres.map((genre, index) => (
-              <li key={index}>
-                <small>{genre.genre}</small>
-              </li>
-            ))}
-          </ul>
+      <div className="max-w-7xl mx-auto w-full flex-1 flex flex-col gap-5 p-4">
+        {/* <Filtering /> */}
+        <SearchBar />
 
-          <ul className="ml-2">
-            <h3>Format</h3>
-            {filter.formats.map((format, index) => (
-              <li key={index}>
-                <small>{format.format}</small>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="ml-2">
-            <h3>Language</h3>
-            {filter.languages.map((language, index) => (
-              <li key={index}>
-                <small>{language.language}</small>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="flex-1  p-4">
-          <h2>home page</h2>
+        <div className=" flex-1 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((song, index) => (
+            <div key={index} className="flex flex-col gap-2">
+              <div className="w-full h-40 bg-bg-color rounded-md shadow-xs"></div>
+              <p>song name by componser</p>
+              <small>genre</small>
+            </div>
+          ))}
         </div>
       </div>
     </LandingAnim>
