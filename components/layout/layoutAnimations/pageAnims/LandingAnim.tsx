@@ -13,7 +13,7 @@ const LandingAnim = ({ children }: Props) => {
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.25 }}
+        transition={{ delay: 0.05 }}
       >
         {children}
       </motion.div>

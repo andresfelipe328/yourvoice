@@ -52,7 +52,7 @@ const DropdownMenu = ({ show, setShow }: Props) => {
       <CollapseAnimLayout style="modal-nav">
         <button
           onClick={() => setShow(!show)}
-          className="absolute top-14 right-10 group/link scale-100 md:scale-0"
+          className="button absolute top-14 right-10 group/link scale-100 md:scale-0"
         >
           <FaTimes className="btn-icon group-hover/link:btn-content-hover-effect hover-ease" />
         </button>
