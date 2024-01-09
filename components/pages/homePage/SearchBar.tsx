@@ -5,7 +5,7 @@ import Filtering from "./Filtering";
 const SearchBar = () => {
   return (
     <>
-      <div className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center gap-5 p-2">
         <div className="p-2 flex items-center bg-btn-color mx-auto w-full md:w-1/2 shadow-s rounded-md hover:shadow-m hover-ease">
           <input
             name="search-input"

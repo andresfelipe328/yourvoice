@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useCallback } from "react";
 import { FaCamera, FaPlay, FaTimes, FaUserAlt } from "react-icons/fa";
 import PreviewAnimLayout from "@/components/layout/layoutAnimations/misc/PreviewAnimLayout";
 
@@ -9,9 +9,22 @@ type Props = {
 };
 
 const PreviewComp = ({ show, setShow, preview }: Props) => {
+  // Handle closing of drop menu on window resize
+  const handleDroNav = useCallback(() => {
+    const windowSize = window.innerWidth;
+    if (show && windowSize < 768) setShow(!show);
+  }, [show, setShow]);
+
+  // Resize event listener
+  useEffect(() => {
+    window.addEventListener("resize", handleDroNav);
+
+    return () => window.removeEventListener("resize", handleDroNav);
+  }, [handleDroNav]);
+
   return (
     <PreviewAnimLayout style="composition-preview">
-      <button onClick={() => setShow(!show)} className="group">
+      <button onClick={() => setShow(!show)} className="group w-fit">
         <FaTimes className="btn-icon group-hover:rotate-180 hover-ease" />
       </button>
       <div className="w-full h-40 bg-bg-color rounded-md shadow-xs flex items-center justify-center">
