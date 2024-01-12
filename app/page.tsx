@@ -1,10 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import LandingAnim from "@/components/layout/layoutAnimations/pageAnims/LandingAnim";
-import SearchBar from "@/components/pages/homePage/SearchBar";
-
-import { FaCamera } from "react-icons/fa";
 import ContentListing from "@/components/pages/homePage/ContentListing";
+import SearchBar from "@/components/pages/homePage/SearchBar";
 
 export default function Home() {
   return (

@@ -13,12 +13,12 @@ type Props = {
 const NAVLINKS = [
   {
     icon: FaHome,
-    href: "#",
+    href: "/",
     text: "home",
   },
   {
     icon: FaListUl,
-    href: "#",
+    href: "/your-work",
     text: "your work",
   },
   {

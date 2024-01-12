@@ -8,18 +8,18 @@ import Burger from "./Burger";
 const NAVLINKS = [
   {
     icon: FaHome,
-    href: "#",
+    href: "/",
     text: "home",
   },
   {
     icon: FaListUl,
-    href: "#",
-    text: "home",
+    href: "/your-work",
+    text: "your work",
   },
   {
     icon: TbMusicUp,
     href: "#",
-    text: "home",
+    text: "upload",
   },
 ];
 

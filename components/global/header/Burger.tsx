@@ -1,12 +1,20 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import { HiMenuAlt1 } from "react-icons/hi";
 import DropdownMenu from "./DropdownMenu";
 
 const Burger = () => {
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
+  const pathmame = usePathname();
+
+  // Close drop menu on pathname change
+  useEffect(() => {
+    if (showDropdownMenu) setShowDropdownMenu(!showDropdownMenu);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathmame]);
 
   return (
     <>
