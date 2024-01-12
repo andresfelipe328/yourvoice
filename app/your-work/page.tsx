@@ -1,7 +1,13 @@
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import LandingAnim from "@/components/layout/layoutAnimations/pageAnims/LandingAnim";
 import { FaCamera, FaEdit } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "yourVoice - Your Work",
+  description: "A list of your published works in yourVoice.",
+};
 
 const page = () => {
   return (
