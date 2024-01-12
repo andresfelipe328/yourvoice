@@ -7,7 +7,7 @@ import { FaTimes, FaCaretRight } from "react-icons/fa";
 type Filter = {
   [key: string]: string | undefined;
   genre?: string;
-  format?: string;
+  buyingOpt?: string;
   language?: string;
 };
 
@@ -56,14 +56,14 @@ const Filtering = () => {
           ))}
         </select>
         <select
-          name="format"
-          id="format"
-          onChange={(e) => handleAddFilter(e, "format")}
+          name="buyingOpt"
+          id="buyingOpt"
+          onChange={(e) => handleAddFilter(e, "buyingOpt")}
         >
           <option defaultValue="format title" className="hidden">
-            Select Format
+            Select Buying Option
           </option>
-          {filter.formats.map((format, index) => (
+          {filter["buying option"].map((format, index) => (
             <option key={index} value={format.format}>
               {format.format}
             </option>

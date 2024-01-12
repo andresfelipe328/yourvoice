@@ -94,15 +94,15 @@
       "genre": "r&b"
     }
   ],
-  "formats": [
+  "buying option": [
     {
-      "format": "lyric sheet"
+      "format": "standard"
     },
     {
-      "format": "mp3"
+      "format": "extended"
     },
     {
-      "format": "mp4"
+      "format": "copyright exchange"
     }
   ],
   "languages": [

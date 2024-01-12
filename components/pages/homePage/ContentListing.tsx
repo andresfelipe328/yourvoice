@@ -24,7 +24,12 @@ const ContentListing = () => {
     <div className="flex gap-2 p-2">
       <div className="relative flex-1 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((song, index) => (
-          <Link id={song.toString()} key={index} href={"#"} className="group">
+          <Link
+            id={song.toString()}
+            key={index}
+            href={`/composition/${"composerId"}/${song}`}
+            className="group"
+          >
             <div className="w-full h-40 border-2 border-text-color bg-bg-color rounded-md shadow-xs flex items-center justify-center">
               <FaCamera className="btn-icon text-5xl opacity-75 group-hover:scale-110 hover-ease" />
             </div>
@@ -46,6 +51,7 @@ const ContentListing = () => {
         {showPreview && (
           <PreviewComp
             key={currPreview}
+            id={currPreview}
             show={showPreview}
             setShow={setShowPreview}
             preview={currPreview}

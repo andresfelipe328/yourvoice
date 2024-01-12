@@ -1,14 +1,16 @@
 import React, { useEffect, useCallback } from "react";
 import { FaCamera, FaPlay, FaTimes, FaUserAlt } from "react-icons/fa";
 import PreviewAnimLayout from "@/components/layout/layoutAnimations/misc/PreviewAnimLayout";
+import Link from "next/link";
 
 type Props = {
+  id: number;
   show: boolean;
   preview: number;
   setShow: Function;
 };
 
-const PreviewComp = ({ show, setShow, preview }: Props) => {
+const PreviewComp = ({ id, show, setShow, preview }: Props) => {
   // Handle closing of drop menu on window resize
   const handleDroNav = useCallback(() => {
     const windowSize = window.innerWidth;
@@ -36,15 +38,20 @@ const PreviewComp = ({ show, setShow, preview }: Props) => {
           <FaPlay className="btn-icon group-hover:btn-content-hover-effect" />
         </button>
         <div className="flex flex-col gap-1">
-          <p>song name</p>
+          <p>
+            song name - <small>genre</small>
+          </p>
           <small>composer, {preview}</small>
         </div>
       </div>
-      <button className="group button w-1/2 mx-auto">
+      <Link
+        href={`/composition/${"composerId"}/${id}`}
+        className="group button w-1/2 mx-auto"
+      >
         <small className="group-hover:btn-content-hover-effect mx-auto">
           Go to Page
         </small>
-      </button>
+      </Link>
       <button className="group button w-1/2 mx-auto">
         <small className="group-hover:btn-content-hover-effect mx-auto">
           Wishlist

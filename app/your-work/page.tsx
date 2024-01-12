@@ -30,9 +30,7 @@ const page = () => {
               <div className="flex flex-col gap-1 p-2">
                 <p>Composition name</p>
                 <small>genre</small>
-                <small className="opacity-60">
-                  Formats: lyric sheet, mp3, mp4
-                </small>
+                <small className="opacity-60">Formats: lyric sheet, mp3</small>
 
                 <div className="opacity-0 group-hover:opacity-100 mt-auto ml-auto flex gap-1 hover-ease">
                   <small>edit</small>
