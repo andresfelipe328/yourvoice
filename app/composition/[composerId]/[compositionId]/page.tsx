@@ -131,7 +131,7 @@ const page = ({
 
           <button className="group button w-fit h-fit">
             <small className="group-hover:btn-content-hover-effect">
-              send a message
+              show more
             </small>
           </button>
         </div>
